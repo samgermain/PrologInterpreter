@@ -5,10 +5,15 @@ An interpreter, consisting of a parser and an evaluator, for the following gramm
 
 
 block = ‘{’ , stmts , ‘}’ ;
+
 stmts = [ assign , stmts ] ;
+
 assign = id , ‘=’ , expr , ‘;’ ;
+
 expr = term , [ ( ‘+’ | ‘−’ ) , expr ] ;
+
 term = factor , [ ( ‘*’ | ‘/’ ) , term ] ;
+
 factor = int | id | ‘(’ , expr , ‘)’ ;
 
 
