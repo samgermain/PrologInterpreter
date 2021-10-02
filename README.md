@@ -1,4 +1,4 @@
-# prolog_interpreter
+# PrologInterpreter
 
 An interpreter, consisting of a parser and an evaluator, for the following grammar
 
