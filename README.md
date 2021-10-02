@@ -3,7 +3,7 @@
 An interpreter, consisting of a parser and an evaluator, for the following grammar
 
 
-
+```
 block = ‘{’ , stmts , ‘}’ ;
 
 stmts = [ assign , stmts ] ;
@@ -15,7 +15,7 @@ expr = term , [ ( ‘+’ | ‘−’ ) , expr ] ;
 term = factor , [ ( ‘*’ | ‘/’ ) , term ] ;
 
 factor = int | id | ‘(’ , expr , ‘)’ ;
-
+```
 
 
 The parser takes a list of lexemes/tokens as input, and from that list of lexemes/tokens create a parse tree as output
